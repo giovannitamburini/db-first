@@ -1,0 +1,47 @@
+TARGA - VARCHAR(7) - Primary Key, NOT_NULL, UNIQUE
+
+(se potessi, creerei un altro database per la casa produttrice in modo tale da avere al posto del varchar un TINYINT )
+CASA PRODUTTRICE - VARCHAR (30) - NOT_NULL
+
+MODELLO - VARCHAR (50) - NOT_NULL
+
+PREZZO - MEDIUMINT - NOT_NULL
+
+CHILOMETRAGGIO - MEDIUMINT - NOT_NULL
+
+ANNO DI IMMATRICOLAZIONE - DATE - NOT_NULL
+
+(se potessi, creerei un altro database per il tipo di motore in modo tale da avere al posto del varchar un TINYINT )
+TIPOLOGIA MOTORE - VARCHAR (50) - "tipologia 1, tipologia 2,..." - NOT_NULL
+
+CILINDRATA - SMALLINT - NOT_NULL
+
+NUMERO CILINDRI - TINYINT - NOT_NULL
+
+KW EROGATI - SMALLINT - NOT_NULL
+
+CV EROGATI - SMALLINT - NULL
+
+MARCE - TINYINT - NOT_NULL
+
+(se potessi, creerei un altro database per il cambio in modo tale da avere al posto del varchar un TINYINT )
+CAMBIO - VARCHAR(22) - NOT_NULL
+
+GOMME TERMICHE - TINYINT - NULL, DEFAULT(0)
+
+POSTI - TINYINT - NOT_NULL
+
+PORTE - TINYINT - NOT_NULL
+
+(sia per il colore che per il tipo di colore, collegherei un altro database in modo da sostituire il varchar con un tinyint)
+COLORE - VARCHAR - NOT_NULL
+
+TIPO DI COLORE - VARCHAR - NOT_NULL (es: metallizzato, opaco...)
+
+(gli collegherei lo stesso database dei colori usato per la colorazione esterna dell'auto)
+COLORE INTERNI - VARCHAR - NOT_NULL
+
+MATERIALE SEDILI - VARCHAR - NOT_NULL
+
+
+
